@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Fake user's data</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {#% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/vars.css') }}">
+    {% endblock %#}
+</head>
+<body>
+        {#% include 'header.html.twig' %#}
+
+    <div class='main-content'>
+        <div class='container'>
+            {% block body %}{% endblock %}  
+        </div>
+    </div>
+    
+</body>
+</html>
